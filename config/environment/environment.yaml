@@ -1,8 +1,0 @@
-local_costmap:
-  local_costmap:
-    ros__parameters:
-      update_frequency: 5.0
-
-rosbag_recorder:
-  ros__parameters:
-    upload_enabled: True

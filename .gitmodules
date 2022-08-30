@@ -1,6 +1,6 @@
-[submodule "amr6_instance"]
-	path = amr6_instance
-	url = https://github.com/pixel-robotics/amr6_instance
-[submodule "brummer_environment"]
-	path = brummer_environment
-	url = https://github.com/pixel-robotics/brummer_environment
+[submodule "environment"]
+	path = environment
+	url = https://github.com/pixel-robotics/environment
+[submodule "instance"]
+	path = instance
+	url = https://github.com/pixel-robotics/instance

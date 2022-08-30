@@ -1,0 +1,3 @@
+[submodule "amr6_instance"]
+	path = amr6_instance
+	url = https://github.com/pixel-robotics/amr6_instance

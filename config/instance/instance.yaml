@@ -1,0 +1,3 @@
+rosbag_recorder:
+  ros__parameters:
+    upload_enabled: False

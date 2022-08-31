@@ -46,7 +46,8 @@ Basically, we want a Default configuration that is overriden by attribute-specif
 
 Example:
 
-*Inputs*
+INPUTS
+
 defaults.yaml:
 
     controller_server:
@@ -71,7 +72,8 @@ simulation_mode.yaml:
             open_loop: true
 
 
-*Ouput*
+OUTPUT:
+
 active_config.yaml:
 
     controller_server:

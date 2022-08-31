@@ -102,8 +102,6 @@ Scenario: We add a new node on master that requires configuration
 Actions: Add the configuration to the defaults.yaml and to the attribute-specific if needed
 
 
-
-
 **Open Points**
 
 How to keep release versions?

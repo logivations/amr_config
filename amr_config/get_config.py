@@ -2,7 +2,7 @@
 
 import collections.abc
 import yaml
-from .get_w2mo_config import get_w2mo_config
+
 
 def update(d, u):
     if u is not None:
@@ -12,6 +12,9 @@ def update(d, u):
             else:
                 d[k] = v
     return d
+
+def get_w2mo_config():
+    return {}
 
 def get_config():
     with open("/code/ros2_ws/src/amr_config/instance/instance.yaml", 'r') as stream:

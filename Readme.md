@@ -3,15 +3,8 @@ Configuration Manager
 
 **Why do we need a configuration manager?**
 
-Each AMR has a unique set of configuration. This configuration depends on attributes. A given AMR has:
+Each AMR has a unique set of configuration. So how can we keep track of each unique set of configuration?
 
-- ID
-- Customer
-- Simulation mode (real/gazebo/simple)
-
-We can even extend on that, in the future we might additionally have different HW versions and other attributes.
-
-So how can we keep track of each unique configuration?
 The most straightforward solution is to have a repository containing all the configuration files and
 have a version control branch for every AMR.
 
@@ -24,13 +17,20 @@ Maintaining the configuration means being able to easily do bulk actions (Add/re
 
 We propose a better approach.
 
+We notice that the AMR configuration depends on attributes which are common across multiple sets of AMR. A given AMR has:
+
+- ID
+- Customer
+- Simulation mode (real/gazebo/simple)
+
+We can even extend on that, in the future we might additionally have different HW versions and other attributes.
+
 Each one of these attributes will dictate one or more configuration parameters, some examples:
 
-- ID: steering angle offset, camera calibration
-- customer: maximum speeds
-- simulation mode: open loop control for simple simulation
-- HW version: fork maximum height
-
+- ID: steering angle offset, camera calibration...
+- customer: maximum speeds...
+- simulation mode: open loop control...
+- HW version: fork maximum height...
 
 Bundling up configurations like this allows us to say:
 
@@ -99,11 +99,11 @@ Scenario: Brummer asks us to limit the speeds of all their AMRs
 Actions: Change the max_speed of the Brummer branch in the customer submodule, pull the submodule on each AMR and restart its bringup
 
 Scenario: We add a new node on master that requires configuration 
-Actions: Add the configuration to the defaults.yaml and to the attribute-specific if needed
+Actions: Add the configuration to the defaults.yaml and if needed, to the attribute-specific
 
 
 **Open Points**
 
 How to keep release versions?
 
-Save parameter is different levels?
+Same parameter is different levels? What's the hirearchy?

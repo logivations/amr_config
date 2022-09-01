@@ -95,12 +95,15 @@ Since each attribute needs multiple branches, each attribute needs to be a repos
 **Maintenance example scenarios**
 
 Scenario: First time setup of AMR at Brummer
+
 Actions: in customer submodule checkout Brummer branch, create new branch in AMR/instance submodule and attribute-specific configuration
 
 Scenario: Brummer asks us to limit the speeds of all their AMRs
+
 Actions: Change the max_speed of the Brummer branch in the customer submodule, pull the submodule on each AMR and restart its bringup
 
 Scenario: We add a new node on master that requires configuration 
+
 Actions: Add the configuration to the defaults.yaml and if needed, to the attribute-specific
 
 

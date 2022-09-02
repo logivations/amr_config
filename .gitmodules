@@ -1,9 +1,6 @@
 [submodule "environment"]
 	path = environment
 	url = https://github.com/pixel-robotics/environment
-[submodule "instance"]
-	path = instance
-	url = https://github.com/pixel-robotics/instance
 [submodule "customer"]
 	path = customer
 	url = https://github.com/pixel-robotics/customer

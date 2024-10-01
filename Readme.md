@@ -112,11 +112,3 @@ Actions: Add the configuration to the defaults.yaml and if needed, to the attrib
 How to keep release versions?
 
 Same parameter is different levels? What's the hirearchy?
-
-
-## How to use for rosbags recorder and uploader
-
-- clone to /data: `cd /data; git clone https://github.com/logivations/amr_config general_config`
-- check out the branch specific to your site, to get the configuration
-- restart rosbag_recorder and rosbag_uploader in Monit container or inside container, e.g. by `monit restart -g rosbags`
-- **important**: Do not copy the whole config file. Instead, only add the properties you want to modify. This way, improvements to the default values will be automatically applied. If you copy the whole config, you will be stuck on old default values forever.
